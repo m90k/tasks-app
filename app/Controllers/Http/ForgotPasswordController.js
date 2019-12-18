@@ -1,9 +1,10 @@
 'use strict';
 
 const Crypto = require('crypto');
+const Moment = require('moment');
+
 const User = use('App/Models/User');
 const Mail = use('Mail');
-const Moment = require('moment');
 
 class ForgotPasswordController {
   async store({request, response}) {
